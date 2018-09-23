@@ -1,0 +1,16 @@
+{
+  "name": "libman",
+  "version": "2.0.0",
+  "description": "Web version of LibMan",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": ""
+  },
+  "author": "UrITSolutions",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "pug": "^2.0.3"
+  }
+}

@@ -1,0 +1,37 @@
+<nav class="transparent z-depth-0" style="font-family: 'Pacifico', cursive;">
+  <div class="nav-wrapper" style="padding-left: 4%; padding-right: 1%">
+    <a href="#!" class="brand-logo">Logo</a>
+    <a data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li class="nav-active"><a  routerLink="/home">Home</a></li>
+      <li><a routerLink="/login" routerLinkActive="active">Login</a></li>
+      <li><a routerLink="/books">Books</a></li>
+      <li><a class="dropdown-trigger" data-target="admin-dropdown">Admin<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a routerLink="/profile">Profile</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Dropdown Structure -->
+<ul id="admin-dropdown" class="dropdown-content">
+  <li><a class="indigo-text darken-4" routerLink="/bookMaster">Book Master</a></li>
+  <li><a class="indigo-text darken-4" routerLink="/readerMaster">Reader Master</a></li>
+  <li><a class="indigo-text darken-4" routerLink="/reports">Reports</a></li>
+</ul>
+
+<ul id="admin-dropdown-side-nav" class="dropdown-content">
+  <li><a routerLink="/bookMaster" class="sidenav-close">Book Master</a></li>
+  <li><a routerLink="/readerMaster" class="sidenav-close">Reader Master</a></li>
+  <li><a routerLink="/reports" class="sidenav-close">Reports</a></li>
+</ul>
+
+<ul class="sidenav" id="mobile-demo" style="font-family: 'Ubuntu Condensed', sans-serif;">
+  <li><a routerLink="/home" class="sidenav-close">Home</a></li>
+  <li><a routerLink="/login" class="sidenav-close" routerLinkActive="active">Login</a></li>
+  <li><a routerLink="/books" class="sidenav-close">Books</a></li>
+  <li><a class="dropdown-trigger-side-nav" data-target="admin-dropdown-side-nav">Admin<i class="material-icons right">arrow_drop_down</i></a></li>
+  <li><a routerLink="/profile" class="sidenav-close">Profile</a></li>
+</ul>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
